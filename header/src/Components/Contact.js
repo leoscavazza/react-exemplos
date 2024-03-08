@@ -1,49 +1,40 @@
 import styled, { keyframes } from "styled-components";
 
 // Componente funcional Contact
-
-
-
-
-
-const Contact = ()  => {
+const Contact = () => {
   return (
     <Container>
       {/* Wrapper para o conteúdo do formulário */}
-        <ContentWrapper>
-          <Title>Entre em Contato</Title>
+      <ContentWrapper>
+        <Title>Entre em Contato</Title>
 
-      {/*Formulário de contato */}
-      <Form>
-        {/*Grupo de campos para o nome */}
-        <FormGroup>
-          <Label htmlFor="name">Nome</Label>
-          <Input type="text" id="name" placeholder="Digite seu nome"/>
-        </FormGroup>
-   
-        {/*Grupo de campos para o email */}
-        <FormGroup>
-          <Label htmlFor="email">E-mail</Label>
-          <Input type="text" id="email" placeholder="Digite seu email"/>
-        </FormGroup>
- 
-        {/*Grupo de campos para a mensagem */}
-        <FormGroup>
-          <Label htmlFor="message">Mensagem</Label>
-          <Input type="text" id="message" placeholder="Digite sua mensagem"/>
-        </FormGroup>
+        {/* Formulário de contato */}
+        <Form>
+          {/* Grupo de campos para o nome */}
+          <FormGroup>
+            <Label htmlFor="name">Nome</Label>
+            <Input type="text" id="name" placeholder="Digite seu nome" />
+          </FormGroup>
 
-         {/* Botão de envio do formulário */}
-         <SubmitButton type="submit">Enviar</SubmitButton>
+          {/* Grupo de campos para o email */}
+          <FormGroup>
+            <Label htmlFor="email">Email</Label>
+            <Input type="email" id="email" placeholder="Digite seu email" />
+          </FormGroup>
+
+          {/* Grupo de campos para a mensagem */}
+          <FormGroup>
+            <Label htmlFor="message">Mensagem</Label>
+            <Textarea id="message" rows="5" placeholder="Digite sua mensagem" />
+          </FormGroup>
+
+          {/* Botão de envio do formulário */}
+          <SubmitButton type="submit">Enviar</SubmitButton>
         </Form>
       </ContentWrapper>
     </Container>
   );
 };
-
-
-
-
 
 // Animação de entrada (fade-in e slide-up)
 const fadeInAnimation = keyframes`

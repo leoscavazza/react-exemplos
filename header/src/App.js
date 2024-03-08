@@ -6,10 +6,10 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 
-// COmponente funcional principal App
+// Componente funcional principal App
 function App() {
   return (
-    <div>
+    <div className="App">
       {/* Componente Router do React Router */}
       <Router>
         {/* Componente Header */}
@@ -17,18 +17,19 @@ function App() {
 
         {/* Definição das rotas */}
         <Routes>
-            {/* Rota para a página inicial */}
-            <Route path="/" element={<Home />} />
+          {/* Rota para a página inicial */}
+          <Route path="/" element={<Home />} />
 
-            {/* Rota para a página "Sobre" */}
-            <Route path="/about" element={<About />} />
+          {/* Rota para a página "Sobre" */}
+          <Route path="/about" element={<About />} />
 
-            {/* Rota para a página "Contato" */}
-            <Route path="/contact" element={<Contact />} />
+          {/* Rota para a página "Contato" */}
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </div>
   );
 }
 
+// Exportação do componente App
 export default App;

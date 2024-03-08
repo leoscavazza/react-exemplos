@@ -19,22 +19,21 @@ const Header = (props) => {
           <span>Home</span>
         </a>
         <a href="/about">
-          <span>About Us</span>
+          <span>About us</span>
         </a>
         <a href="/contact">
-          <span>Contact Us</span>
+          <span>Contact us</span>
         </a>
       </NavMenu>
 
       {/* Wrapper adicional */}
       <Wrap>Hi</Wrap>
-     
+
       {/* Botão de Login */}
       <Login>Login</Login>
     </Container>
   );
 };
- 
 
 // Styled-Components
 
